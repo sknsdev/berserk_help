@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Шрифт */
+}
