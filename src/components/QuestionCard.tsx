@@ -16,9 +16,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ question, answer, in
   const [thankYou, setThankYou] = useState<boolean>(false);
   const [hoveredStar, setHoveredStar] = useState<number | null>(null);
 
+  // Загрузка оценки из localStorage при первом рендере
+  useEffect(() => {
+    const savedRating = localStorage.getItem(`rating_${index}`);
+    if (savedRating) {
+      setRating(Number(savedRating));
+    }
+  }, [index]);
+
   const handleRating = (value: number) => {
     setRating(value);
     setThankYou(true);
+    localStorage.setItem(`rating_${index}`, value.toString()); // Сохранение оценки в localStorage
   };
 
   return (
@@ -41,7 +50,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ question, answer, in
               {[1, 2, 3, 4, 5].map((starValue) => (
                 <svg
                   key={starValue}
-                  className={`w-6 h-6 cursor-pointer ${rating === starValue || hoveredStar === starValue ? 'text-yellow-500' : 'text-gray-400'}`}
+                  className={`w-6 h-6 cursor-pointer ${(rating !== null && rating >= starValue) || (hoveredStar !== null && hoveredStar >= starValue) ? 'text-yellow-500' : 'text-gray-400'}`}
                   fill="currentColor"
                   stroke="currentColor"
                   viewBox="0 0 20 20"
