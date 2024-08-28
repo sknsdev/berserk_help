@@ -80,10 +80,10 @@ export const categories: Category = {
             {
                 question: 'Что такое редкость карты?',
                 answer: `Редкость карты определяет, насколько сложно её достать в игре и влияет на силу и эффективность карты.
-                
-                **![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%A7%D0%B0%D1%81%D1%82%D0%B0%D1%8F.png)**— частая; **![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%9D%D0%B5%D0%BE%D0%B1%D1%8B%D1%87%D0%BD%D0%B0%D1%8F.png)**— необычная;
-
-**![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%A0%D0%B5%D0%B4%D0%BA%D0%B0%D1%8F.png)**— редкая; **![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%80%D0%B5%D0%B4%D0%BA%D0%B0%D1%8F.png)**— ультраредкая.
+                ![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%A7%D0%B0%D1%81%D1%82%D0%B0%D1%8F.png)— частая; 
+![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%9D%D0%B5%D0%BE%D0%B1%D1%8B%D1%87%D0%BD%D0%B0%D1%8F.png)— необычная;
+![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%A0%D0%B5%D0%B4%D0%BA%D0%B0%D1%8F.png)— редкая; 
+![](https://hobbygames.ru/image/data/00_Berserk/01_%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%B9/Symbols/%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%80%D0%B5%D0%B4%D0%BA%D0%B0%D1%8F.png)— ультраредкая.
                 `
             },
             {
