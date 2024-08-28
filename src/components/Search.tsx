@@ -1,9 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { categoriesEngToRus, questions, categories } from '@/data/question';
-
-type CategoryKeys = keyof typeof categories;
+import { categories } from '@/data/question';
 
 const Search = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -19,7 +17,7 @@ const Search = () => {
             } else {
                 setResults([]);
             }
-        }, 500); // Задержка 500 мс
+        }, 200); // Задержка 500 мс
 
         return () => {
             clearTimeout(handler); // Очистка таймера
@@ -29,10 +27,10 @@ const Search = () => {
     // Функция для поиска вопросов по тексту
     const filteredResults = () => {
         const results: { category: string; question: string }[] = [];
-        Object.entries(questions).forEach(([category, qs]) => {
-            qs.forEach((q) => {
+        Object.entries(categories).forEach(([categorySlug, categoryInfo]) => {
+            categoryInfo.question.forEach((q) => {
                 if (q.question.toLowerCase().includes(searchTerm.toLowerCase())) {
-                    results.push({ category, question: q.question });
+                    results.push({ category: categorySlug, question: q.question });
                 }
             });
         });
@@ -49,10 +47,8 @@ const Search = () => {
     };
 
     // Обработка клика по вопросу
-    const handleQuestionClick = (cat: CategoryKeys, question: string, index: string) => {
-        const categorySlug = categories[cat]; // Получаем slug категории
-        console.log(question,)
-        router.push(`/categories/${categorySlug}?search=${index}`); // Навигация на страницу категории
+    const handleQuestionClick = (category: string, question: string) => {
+        router.push(`/categories/${category}?search=${encodeURIComponent(question)}`); // Навигация на страницу категории
     };
 
     return (
@@ -70,7 +66,7 @@ const Search = () => {
                         <div
                             key={index}
                             className="p-3 border-b text-black border-gray-200 cursor-pointer hover:bg-gray-100"
-                            onClick={() => handleQuestionClick(result.category as CategoryKeys, result.question, result.question)}
+                            onClick={() => handleQuestionClick(result.category, result.question)}
                         >
                             <p>{highlightText(result.question)}</p>
                         </div>

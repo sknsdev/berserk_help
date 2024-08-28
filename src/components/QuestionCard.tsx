@@ -32,7 +32,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ question, answer, in
       {isOpen && (
         <div className="mt-2">
           <ReactMarkdown className="text-black">{answer}</ReactMarkdown>
-          <p className="text-gray-500 mt-2">Последнее обновление 27.08.2024</p>
+          <p className="text-gray-500 mt-4 mb-6">Последнее обновление 27.08.2024</p>
+          <p className="text-gray-400 mt-2 mb-2">Оцените, на сколько полезен этот ответ:</p>
           {thankYou ? (
             <p className="text-green-600">Спасибо за оценку</p>
           ) : (
