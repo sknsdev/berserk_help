@@ -17,7 +17,7 @@ const Search = () => {
             } else {
                 setResults([]);
             }
-        }, 200); // Задержка 500 мс
+        }, 200); // Задержка 200 мс
 
         return () => {
             clearTimeout(handler); // Очистка таймера
@@ -52,14 +52,17 @@ const Search = () => {
     };
 
     return (
-        <div className="max-w-4xl mx-auto my-10 relative">
-            <input
-                type="text"
-                placeholder="Поиск вопросов..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full p-2 border border-gray-300 rounded text-black"
-            />
+        <div className="max-w-4xl mx-auto my-10 relative bg-white rounded">
+            <div className="flex items-center border border-gray-300 rounded">
+                <span className="p-2 text-xl">🔍</span> {/* Иконка поиска в виде emoji */}
+                <input
+                    type="text"
+                    placeholder="Поиск вопросов..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="w-full p-2 text-black outline-none"
+                />
+            </div>
             {results.length > 0 && (
                 <div className="mt-2 absolute top-full left-0 right-0 bg-white z-50 border border-gray-200 rounded shadow-lg">
                     {results.map((result, index) => (
