@@ -1,5 +1,6 @@
 'use client'
 import { QuestionCard } from '@/components/QuestionCard';
+import Search from '@/components/Search';
 import { categories } from '@/data/question';
 import Link from 'next/link'; // Изменен импорт на корректный
 import { useParams } from 'next/navigation';
@@ -14,7 +15,8 @@ const CategoryPage = () => {
     const categoryQuestions = categoryInfo.question; // Вопросы для категории
 
     return (
-        <div className="max-w-4xl mx-auto py-10">
+        <div className="max-w-4xl mx-auto py-10 px-2">
+            <Search />
             <h1 className="text-3xl font-bold">{categoryTitle}</h1>
             <nav className="mb-5 text-gray-600">
                 <Link href="/">Главная</Link> / <Link href="/">Категории</Link> / {categoryTitle}
