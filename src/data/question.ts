@@ -148,7 +148,9 @@ export const categories: Category = {
         question: [
             {
                 question: 'Как связаться с технической поддержкой?',
-                answer: `Вы можете связаться с технической поддержкой через раздел «**Поддержка**» на сайте https://berserk-app.ru/contact, по электронной почте, указанной на нашем сайте, при помощи кнопки **Связаться с нами** [![image.png](https://i.postimg.cc/YqC5PMC6/image.png)](https://postimg.cc/rz7Z06Ws), или в группе вконтакте https://vk.com/berserk_assistant . 
+                answer: `Вы можете связаться с технической поддержкой через раздел «**Поддержка**» на сайте https://berserk-app.ru/contact, по электронной почте, указанной на нашем сайте, при помощи кнопки **Связаться с нами** [![image.png](https://i.postimg.cc/YqC5PMC6/image.png)](https://postimg.cc/rz7Z06Ws)
+                
+                Или в группе ВКонтакте [Ссылка на группу "Берсерк Ассистент"](https://vk.com/berserk_assistant) . 
 
 Также вы можете заполнить форму обратной свзяи на сайте https://berserk-app.ru/contact
 
@@ -156,7 +158,9 @@ export const categories: Category = {
             },
             {
                 question: 'Я обнаружил баги. Как их сообщить?',
-                answer: `Если обнаружили баг, сообщите о нём через раздел «**Поддержка**» на сайте https://berserk-app.ru/contact, по электронной почте, указанной на нашем сайте, при помощи кнопки **Связаться с нами** [![image.png](https://i.postimg.cc/YqC5PMC6/image.png)](https://postimg.cc/rz7Z06Ws), или в группе вконтакте https://vk.com/berserk_assistant . 
+                answer: `Если обнаружили баг, сообщите о нём через раздел «**Поддержка**» на сайте https://berserk-app.ru/contact, по электронной почте, указанной на нашем сайте, при помощи кнопки **Связаться с нами** [![image.png](https://i.postimg.cc/YqC5PMC6/image.png)](https://postimg.cc/rz7Z06Ws)
+                
+                Или в группе ВКонтакте [Ссылка на группу "Берсерк Ассистент"](https://vk.com/berserk_assistant) . 
 
 Также вы можете заполнить форму обратной свзяи на сайте https://berserk-app.ru/contact
 
