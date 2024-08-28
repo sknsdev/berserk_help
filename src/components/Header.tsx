@@ -5,7 +5,7 @@ import logo from '@/components/squared.png';
 const links = [
     { title: 'Главная', link: '/', active: true },
     { title: 'Домой', link: 'https://berserk-app.ru', active: true },
-    { title: 'Google play', link: 'https://twitter.com', active: true },
+    { title: 'Google play', link: 'https://play.google.com/store/apps/details?id=com.vlasov.berserk_assistant', active: true },
     { title: 'App Store (soon)', link: 'https://instagram.com', active: false },
 ];
 
@@ -22,7 +22,7 @@ const Header = () => {
                     <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
                         {links.map(({ title, link, active }) => (
                             <li key={title}>
-                                <a href={link} className={`transition ${active ? 'hover:underline ' : 'disabled cursor-default opacity-80'}`}>{title}</a>
+                                <a href={link} className={`transition ${active ? 'hover:underline ' : 'disabled cursor-default opacity-60'}`}>{title}</a>
                             </li>
                         ))}
                         <li>
