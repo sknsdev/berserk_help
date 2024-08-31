@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 export default function About() {
     return (
-        <div className="min-h-screen flex flex-col items-center  p-8 bg-gray-100">
+        <div className="min-h-screen flex flex-col items-center  p-8 bg-gray-100 dark:bg-slate-800">
             <Head>
                 <title>О разработчике</title>
             </Head>
