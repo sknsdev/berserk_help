@@ -1,14 +1,16 @@
-// components/FAQSection.tsx
+"use client"
 import { categories } from '@/data/question';
 import Link from 'next/link';
 import Search from './Search';
+import SupportForm from './SupportForm';
 
 const FAQSection = () => {
     return (
         <div className="max-w-4xl mx-auto py-10 px-2">
             <h1 className="text-3xl font-bold text-center mb-6">Как мы можем помочь? 👋</h1>
             <Search />
-            <h2 className="text-2xl font-bold">Все категории</h2>
+            <SupportForm />
+            <h2 className="text-2xl font-bold">Все категории вопросов</h2>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:px-1 md:px-2">
                 {Object.entries(categories).map(([slug, categoryInfo]) => (
                     <Link href={`/categories/${slug}`} key={slug}>
