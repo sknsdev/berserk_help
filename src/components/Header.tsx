@@ -5,8 +5,9 @@ import logo from '@/components/squared.png';
 const links = [
     { title: 'Главная', link: '/', active: true },
     { title: 'Домой', link: 'https://berserk-app.ru', active: true },
-    { title: 'Google play', link: 'https://play.google.com/store/apps/details?id=com.vlasov.berserk_assistant', active: true },
-    { title: 'App Store (soon)', link: 'https://instagram.com', active: false },
+    // { title: 'Google play', link: 'https://play.google.com/store/apps/details?id=com.vlasov.berserk_assistant', active: true },
+    { title: 'О разработчике', link: '/about', active: true },
+    // { title: 'App Store (soon)', link: 'https://instagram.com', active: false },
 ];
 
 const Header = () => {
